@@ -1,4 +1,4 @@
-# Rewind
+# Rewind - Context Switching Recovery Agent
 
 **Rewind** — an MCP server that reconstructs your working context after interruptions aka Context Switch.
 
