@@ -1,11 +1,11 @@
 {
-  "name": "rewind-mcp",
+  "name": "@anthropic/rewind-mcp",
   "version": "1.0.0",
   "description": "Rewind — an MCP server that reconstructs your working context after interruptions",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "rewind": "dist/index.js"
+    "rewind-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsup",
@@ -31,7 +31,8 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1"

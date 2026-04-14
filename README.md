@@ -28,10 +28,22 @@ Rewind solves this. It's an [MCP server](https://modelcontextprotocol.io) that a
 
 ## Setup
 
+### Install from npm
+
+```bash
+npm install -g rewind-mcp
+```
+
 ### With Claude Code
 
 ```bash
-claude mcp add rewind node /absolute/path/to/rewind/dist/index.js
+claude mcp add rewind -- npx rewind-mcp
+```
+
+Or if installed globally:
+
+```bash
+claude mcp add rewind -- rewind-mcp
 ```
 
 ### With Claude Desktop
@@ -42,8 +54,8 @@ Add to your `claude_desktop_config.json`:
 {
   "mcpServers": {
     "rewind": {
-      "command": "node",
-      "args": ["/absolute/path/to/rewind/dist/index.js"]
+      "command": "npx",
+      "args": ["rewind-mcp"]
     }
   }
 }
@@ -56,6 +68,12 @@ git clone <repo-url>
 cd context-switch
 npm install
 npm run build
+```
+
+Then add locally:
+
+```bash
+claude mcp add rewind node /absolute/path/to/dist/index.js
 ```
 
 ## Usage
