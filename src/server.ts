@@ -14,7 +14,7 @@ import { loadConfig } from './config/index.js';
 
 export function createServer(): McpServer {
   const server = new McpServer({
-    name: 'context-switch',
+    name: 'rewind',
     version: '1.0.0',
   });
 
@@ -184,14 +184,14 @@ Use this when you return from a meeting, break, or context switch and need to re
   // ─── Tool: get_context_status ───────────────────────────────────────────────
   server.tool(
     'get_context_status',
-    `Shows the current status of the Context Switch agent: tracked directories, snapshot counts, and storage info. Useful for understanding what the agent knows about and managing its state.`,
+    `Shows the current status of the Rewind agent: tracked directories, snapshot counts, and storage info. Useful for understanding what the agent knows about and managing its state.`,
     {},
     async () => {
       const directories = listTrackedDirectories();
       const totalSnapshots = getTotalSnapshotCount();
 
       const lines: string[] = [];
-      lines.push('# Context Switch Status');
+      lines.push('# Rewind Status');
       lines.push('');
       lines.push(`**Total snapshots:** ${totalSnapshots}`);
       lines.push(`**Tracked directories:** ${directories.length}`);

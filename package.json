@@ -1,11 +1,11 @@
 {
-  "name": "context-switch",
+  "name": "rewind-mcp",
   "version": "1.0.0",
-  "description": "Context Switching Recovery Agent — an MCP server that reconstructs your working context after interruptions",
+  "description": "Rewind — an MCP server that reconstructs your working context after interruptions",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "context-switch": "dist/index.js"
+    "rewind": "dist/index.js"
   },
   "scripts": {
     "build": "tsup",
@@ -16,6 +16,7 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": [
+    "rewind",
     "context-switch",
     "mcp",
     "mcp-server",

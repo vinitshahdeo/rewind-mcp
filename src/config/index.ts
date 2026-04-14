@@ -3,7 +3,7 @@ import path from 'node:path';
 import os from 'node:os';
 import type { ContextSwitchConfig } from '../types.js';
 
-const APP_DIR = path.join(os.homedir(), '.context-switch');
+const APP_DIR = path.join(os.homedir(), '.rewind');
 const CONFIG_FILE = path.join(APP_DIR, 'config.json');
 const SNAPSHOTS_DIR = path.join(APP_DIR, 'snapshots');
 const DAEMON_PID_FILE = path.join(APP_DIR, 'daemon.pid');
